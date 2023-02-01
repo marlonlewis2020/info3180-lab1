@@ -1,7 +1,31 @@
+:root {
+  --h1-blue: rgb(50,0,255);
+  --h1-size: 28px;
+  --h2-size: 18px;
+  --h2-red: rgb(246, 48, 150);
+  --p-size: 14px;
+  --p-blue: rgb(29, 45, 88);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.5;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  color: var(--h1-blue, blue);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  color: var(--h2-red, red); 
+}
+
+p {
+  font-size: var(--p-size);
+  color: var(--p-blue);
 }
 
 .container {
