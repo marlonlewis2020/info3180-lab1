@@ -1,33 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab1</title>
-    
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <header class="header">
-                    <img src="{{ url_for('static', filename='images/berries.jpeg') }}" alt="image of berries">
-                </header>
-                <h1>Marlon Lewis</h1>
-                <p>I am a passionate Web Developer aiming to utilize my knowledge and skills to create innovative solutions to improve the existing infrastructures and systems locally and around the world. 
-                    My interests span national development through industry stimulaaation, engagement, creativity and accountable social welfare.
-                </p>
-                <p>
-                    <h2>
-                        Why Fruits?
-                    </h2>
-                    I just love fruits. It is also a reminder that changes toward a healthier system can also be sweet and pleasant, not just agonising.
-                </p>
-            </div>
-        </div>
+{% extends 'base.html'%}
+{% block content %}
 
-    </div>
-</body>
-</html>
+<img src="{{ url_for('static', filename='images/berries.jpeg') }}" alt="image of berries">
+<h1>Marlon Lewis</h1>
+<p>I am a passionate Web Developer aiming to utilize my knowledge and skills to create innovative solutions to improve the existing infrastructures and systems locally and around the world. 
+    My interests span national development through industry stimulaaation, engagement, creativity and accountable social welfare.
+</p>
+<p>
+    <h2>
+        Why Fruits?
+    </h2>
+    I just love fruits. It is also a reminder that changes toward a healthier system can also be sweet and pleasant, not just agonising.
+</p>
+
+{% endblock %}
