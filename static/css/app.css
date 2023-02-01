@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  margin-top: 3rem;
+}
+
 h1 {
   font-size: var(--h1-size);
   color: var(--h1-blue, blue);
